@@ -1,0 +1,15 @@
+export default function AdminLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <div className="flex min-h-screen">
+      <aside className="w-64 border-r">Admin Sidebar</aside>
+      <div className="flex-1">
+        <nav className="border-b">Admin Nav</nav>
+        <main className="p-4">{children}</main>
+      </div>
+    </div>
+  );
+}
